@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import AboutHeroImage from '../assets/issue1.jpg';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 ---
 
@@ -25,8 +26,14 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 					— THEODORE ROOSEVELT, <i> The Man in the Arena </i>
 				</p>
 				<p> <b>Read our current publication of daring intellectual exploits below:</b> </p>
+				<a href="https://drive.google.com/file/d/1bDLrOO0vKOoALTe89z-fGjBjB4Zrp0y6/view?usp=sharing"> 
+					<img src={AboutHeroImage.src} alt="Issue1" width="500" height="600">
+				</a>
 			</div>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+
+
