@@ -21,15 +21,25 @@ import Layout from '../layouts/BlogPost.astro';
 	</p>
 	<hr style="border: none; border-top: 1px solid #d1d5db; margin: 24px 0;" />
 	<h3 style="text-align: center;">Our contributors:</h3>
-	<div style="display: flex; align-items: center; gap: 16px;">
-  		<img
-    		src={Profile_lily.src}
-    		alt="Profile Photo"
-    		style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;"
- 		 />
-  		<p> <b>Lily Collins, Cheif Technology Engineer</b> <br>
-		Lily coded this website with her brother, Hugo. She is a high school junior, and 
+	<div class="card">
+  		<img src={Profile_lily.src} alt="Profile Photo" class="card-image" />
+  			<div class="card-text">
+    			<p><b>Lily Collins, Cheif Technology Engineer</b><br>Lily coded this website with her brother, Hugo. She is a high school junior, and 
 		when she's not leading the computer science club, playing on the varsity soccer team, or 
 		in the chemistry lab, you can find her playing flute and learning to speak Polish.</p>
+  			</div>
 	</div>
+	<style>
+  .card {
+    display: grid;
+    grid-template-columns: 1fr;  /* single column on mobile */
+    gap: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .card {
+      grid-template-columns: 300px 1fr;  /* fixed image width + fluid text */
+    }
+  }
+</style>
 </Layout>
