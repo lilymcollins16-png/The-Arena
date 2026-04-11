@@ -1,6 +1,7 @@
 ---
 title: 'An Apology Owed: How Dostoyevsky Reminds Us That We Need Plato More Than Ever'
 description: 'Lorem ipsum dolor sit amet'
+author: 'Zosia Collins'
 pubDate: 'Apr 09 2026'
 heroImage: '../../assets/blog-placeholder-3.jpg'
 ---
