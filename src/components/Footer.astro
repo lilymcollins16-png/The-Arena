@@ -3,20 +3,19 @@ const today = new Date();
 ---
 
 <footer>
-	<b>Contact us at:</b>
+	<b>Contact or submit your writing to us at:</b>
 	<br>
-	<a href="mailto:thearenajournal@gmail.com">
-				<span>
-					<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M18.6572 15.0002L13.1215 10.0002M8.35961 10.0002L2.82392 15.0002M2.40723 5.8335L9.21133 10.5964C9.7623 10.982 10.0378 11.1749 10.3374 11.2496C10.6021 11.3156 10.879 11.3156 11.1437 11.2496C11.4433 11.1749 11.7188 10.982 12.2698 10.5964L19.0739 5.8335M6.40723 16.6668H15.0739C16.474 16.6668 17.1741 16.6668 17.7089 16.3943C18.1793 16.1547 18.5617 15.7722 18.8014 15.3018C19.0739 14.767 19.0739 14.067 19.0739 12.6668V7.3335C19.0739 5.93336 19.0739 5.2333 18.8014 4.69852C18.5617 4.22811 18.1793 3.84566 17.7089 3.60598C17.1741 3.3335 16.474 3.3335 15.0739 3.3335H6.40723C5.0071 3.3335 4.30703 3.3335 3.77225 3.60598C3.30185 3.84566 2.91939 4.22811 2.67971 4.69852C2.40723 5.2333 2.40723 5.93336 2.40723 7.3335V12.6668C2.40723 14.067 2.40723 14.767 2.67971 15.3018C2.91939 15.7722 3.30185 16.1547 3.77225 16.3943C4.30703 16.6668 5.0071 16.6668 6.40723 16.6668Z" stroke="#D3D5DA" stroke-linecap="round" stroke-linejoin="round"></path>
-					</svg>
-				</span>
+	<a href="mailto:thearenajournal@gmail.com" class="email-link">
+		<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M18.6572 15.0002L13.1215 10.0002M8.35961 10.0002L2.82392 15.0002M2.40723 5.8335L9.21133 10.5964C9.7623 10.982 10.0378 11.1749 10.3374 11.2496C10.6021 11.3156 10.879 11.3156 11.1437 11.2496C11.4433 11.1749 11.7188 10.982 12.2698 10.5964L19.0739 5.8335M6.40723 16.6668H15.0739C16.474 16.6668 17.1741 16.6668 17.7089 16.3943C18.1793 16.1547 18.5617 15.7722 18.8014 15.3018C19.0739 14.767 19.0739 14.067 19.0739 12.6668V7.3335C19.0739 5.93336 19.0739 5.2333 18.8014 4.69852C18.5617 4.22811 18.1793 3.84566 17.7089 3.60598C17.1741 3.3335 16.474 3.3335 15.0739 3.3335H6.40723C5.0071 3.3335 4.30703 3.3335 3.77225 3.60598C3.30185 3.84566 2.91939 4.22811 2.67971 4.69852C2.40723 5.2333 2.40723 5.93336 2.40723 7.3335V12.6668C2.40723 14.067 2.40723 14.767 2.67971 15.3018C2.91939 15.7722 3.30185 16.1547 3.77225 16.3943C4.30703 16.6668 5.0071 16.6668 6.40723 16.6668Z" stroke="#528a93" stroke-linecap="round" stroke-linejoin="round"></path>
+		</svg>
+		thearenajournal@gmail.com
 	</a>
-	<a href="mailto:thearenajournal@gmail.com">thearenajournal@gmail.com</a>
 	<br>
 	<br>
 	&copy; {today.getFullYear()} Hugo and Lily Collins. All rights reserved.
 </footer>
+
 <style>
 	footer {
 		padding: 2em 1em 6em 1em;
@@ -24,17 +23,19 @@ const today = new Date();
 		color: rgb(var(--gray));
 		text-align: center;
 	}
-	.social-links {
+	.email-link {
 		display: flex;
 		justify-content: center;
-		gap: 1em;
-		margin-top: 1em;
-	}
-	.social-links a {
+		gap: 0.5em;
+		margin-top: 0.4em;
 		text-decoration: none;
-		color: rgb(var(--gray));
+		color: #528a93;
 	}
-	.social-links a:hover {
-		color: rgb(var(--gray-dark));
+	.email-link svg {
+    	position: relative;
+    	top: 8px; /* increase this number to move it further down */
+	}
+	.email-link:hover {
+    	text-decoration: underline;
 	}
 </style>
