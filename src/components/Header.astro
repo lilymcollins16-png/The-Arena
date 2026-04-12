@@ -1,7 +1,7 @@
 ---
 import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
-import GitPhoto from '../assets/github.svg';
+import GitPhoto from '../assets/github.svg?url';
 ---
 
 <header>
@@ -12,8 +12,9 @@ import GitPhoto from '../assets/github.svg';
 			<HeaderLink href="/blog">Articles</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
 		</div>
-		<a href="https://github.com/lilymcollins16-png/The-Arena" target="_blank" class="social-links"><img src={GitPhoto.src}></img></a>
-	</nav>
+		<a href="https://github.com/lilymcollins16-png/The-Arena" target="_blank" class="social-links">
+  		<img src={GitPhoto} alt="GitHub" />
+</a>
 </header>
 <style>
 	header {
