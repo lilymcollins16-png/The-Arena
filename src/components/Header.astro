@@ -1,7 +1,6 @@
 ---
 import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
-import GitPhoto from '../assets/github.svg?url';
 ---
 
 <header>
@@ -12,9 +11,6 @@ import GitPhoto from '../assets/github.svg?url';
 			<HeaderLink href="/blog">Articles</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
 		</div>
-		<a href="https://github.com/lilymcollins16-png/The-Arena" target="_blank" class="social-links">
-  		<img src={GitPhoto} alt="GitHub" />
-</a>
 </header>
 <style>
 	header {
@@ -46,15 +42,5 @@ import GitPhoto from '../assets/github.svg?url';
 	nav a.active {
 		text-decoration: none;
 		border-bottom-color: var(--accent);
-	}
-	.social-links img {
-  		width: 30px;
-  		height: 30px;
-		position: relative;
-    	top: 4px;
-	}
-	.social-links {
-		grid-column: 3;
-  		justify-self: end;
 	}
 </style>
