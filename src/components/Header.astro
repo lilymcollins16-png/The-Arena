@@ -1,6 +1,7 @@
 ---
 import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
+import GitPhoto from '../assets/github.svg';
 ---
 
 <header>
@@ -11,6 +12,7 @@ import HeaderLink from './HeaderLink.astro';
 			<HeaderLink href="/blog">Articles</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
 		</div>
+		<a href="https://github.com/lilymcollins16-png/The-Arena" target="_blank" class="social-links"><img src={GitPhoto.src}></img></a>
 	</nav>
 </header>
 <style>
@@ -44,13 +46,14 @@ import HeaderLink from './HeaderLink.astro';
 		text-decoration: none;
 		border-bottom-color: var(--accent);
 	}
-	.social-links,
-	.social-links a {
-		display: flex;
+	.social-links img {
+  		width: 30px;
+  		height: 30px;
+		position: relative;
+    	top: 4px;
 	}
-	@media (max-width: 720px) {
-		.social-links {
-			display: none;
-		}
+	.social-links {
+		grid-column: 3;
+  		justify-self: end;
 	}
 </style>
