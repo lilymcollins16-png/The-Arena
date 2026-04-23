@@ -1,10 +1,10 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import AboutHeroImage from '../assets/issue1.jpg';
-import Logo from '../assets/logo.png';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import AboutHeroImage from "../assets/issue1.jpg";
+import Logo from "../assets/logo.png";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 ---
 
 <!doctype html>
@@ -16,26 +16,61 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		<Header />
 		<main>
 			<div style="text-align: center;">
-				<img src={Logo.src} alt="Logo" width="500" height="150">
-				<br>
+				<img
+					src={Logo.src}
+					class="logo"
+					alt="Logo"
+					width="500"
+					height="150"
+				/>
+				<style>
+					.logo {
+						width: 200px;
+						height: 200px;
+						border-radius: 50%;
+						object-fit: cover;
+						justify-self: center;
+					}
+				</style>
+				<br />
 				<p>
-					“It is not the critic who counts; not the man who points out how the strong man stumbles,
-					or where the doer of deeds could have done them better. The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood; who strives valiantly; who errs, who comes short again and again, because there is no effort without error and shortcoming; but who does actually strive to do the deeds; who knows great enthusiasms, the great devotions;
-					who spends himself in a worthy cause; who at the best knows in the end the triumph of high achievement, and who at the worst, if he fails, at least fails while daring greatly, so that his place shall never be with those cold and timid souls who neither know victory nor defeat."
+					“It is not the critic who counts; not the man who points out
+					how the strong man stumbles, or where the doer of deeds
+					could have done them better. The credit belongs to the man
+					who is actually in the arena, whose face is marred by dust
+					and sweat and blood; who strives valiantly; who errs, who
+					comes short again and again, because there is no effort
+					without error and shortcoming; but who does actually strive
+					to do the deeds; who knows great enthusiasms, the great
+					devotions; who spends himself in a worthy cause; who at the
+					best knows in the end the triumph of high achievement, and
+					who at the worst, if he fails, at least fails while daring
+					greatly, so that his place shall never be with those cold
+					and timid souls who neither know victory nor defeat."
 				</p>
 				<p>
 					— THEODORE ROOSEVELT, <i> The Man in the Arena </i>
 				</p>
-				<br>
-				<p> <b>Read our current publication of daring intellectual exploits below:</b> </p>
-				<a href="https://drive.google.com/file/d/1bDLrOO0vKOoALTe89z-fGjBjB4Zrp0y6/view?usp=sharing" target="_blank"> 
-					<img src={AboutHeroImage.src} alt="Issue1" width="500" height="600">
+				<br />
+				<p>
+					<b
+						>Read our current publication of daring intellectual
+						exploits below:</b
+					>
+				</p>
+				<a
+					href="https://drive.google.com/file/d/1bDLrOO0vKOoALTe89z-fGjBjB4Zrp0y6/view?usp=sharing"
+					target="_blank"
+				>
+					<img
+						src={AboutHeroImage.src}
+						alt="Issue1"
+						width="500"
+						height="600"
+					/>
 				</a>
 			</div>
 		</main>
 		<Footer />
 	</body>
 </html>
-
-
-
