@@ -1,73 +1,154 @@
 ---
-import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
-import Profile_zosia from '../assets/zosia_profile.jpg';
-import Profile_maude from '../assets/maude_profile.jpg';
-import Profile_keira from '../assets/keira_profile.jpg';
-import Layout from '../layouts/BlogPost.astro';
+import AboutHeroImage from "../assets/blog-placeholder-about.jpg";
+import Profile_zosia from "../assets/zosia_profile.jpg";
+import Profile_maude from "../assets/maude_profile.jpg";
+import Profile_keira from "../assets/keira_profile.jpg";
+import Profile_charlie_wilcoxon from "../assets/Charlie_Wilcoxon_profile.jpg";
+import Profile_charlie_miller from "../assets/Charlie_Miller_profile.jpg";
+import Profile_bridget from "../assets/Bridget_Noonan_profile.jpg";
+import Profile_gianna from "../assets/Gianna_DeBono_profile.jpg";
+import Layout from "../layouts/BlogPost.astro";
 ---
 
 <Layout
 	title="About The Arena"
 	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('March 22 2026')}
+	author=""
+	pubDate={new Date("March 22 2026")}
 	heroImage={AboutHeroImage}
 >
 	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
-		viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam
-		adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus
-		et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-		vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque
-		sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo
+		integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu
+		turpis egestas pretium. Euismod elementum nisi quis eleifend quam
+		adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus
+		sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget
+		magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius
+		sit amet mattis vulputate enim. Habitasse platea dictumst quisque
+		sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque
+		sagittis purus sit amet.
 	</p>
 	<hr style="border: none; border-top: 1px solid #d1d5db; margin: 24px 0;" />
 	<h3 style="text-align: center;">Our contributors:</h3>
 	<div class="card">
-		<img src={Profile_zosia.src} alt="Profile Photo" class="card-image"/>
-  			<div class="card-text">
-    			<p><b>Zosia Collins, Founder and Chief Editor</b><br>Zosia is a first year at UVA, where she is pursuing a 
-				degree in the extraordinarily practical field of Classics. Besides editing The Arena, she is 
-				an intern at the Institute for Family Studies, a fellow at the Blue Ridge Center, and highly 
-				involved with Catholic Hoos. Although a very busy person, she will make time for anyone who 
-				wishes to discuss flute music, good literature, writing novels, or ancient philosophy.</p>
-  			</div>
-		<img src={Profile_maude.src} alt="Profile Photo" class="card-image"/>
-  			<div class="card-text">
-    			<p><b>Pamella Parker, Editor</b><br>Pamella is a first year Chemistry major at 
-				UVA. You may know her better by her middle name, Maude. She still doesn’t know what her parents 
-				were thinking. She’s known for her sharp sense of humor, practical mindset, and ability to keep 
-				things both thoughtful and down-to-earth. She’ll talk your ear off about anything, and whatever 
-				her opinion may be, it will certainly be a strong one!
-				</p>
-  			</div>
-		<img src={Profile_keira.src} alt="Profile Photo" class="card-image"/>
-  			<div class="card-text">
-    			<p><b>Keira Thomas, Editor</b><br>Originally from Front Royal VA, Keira is a 
-				first year at UVA, majoring in History and English. An aspiring teacher, Keira loves to discuss 
-				literature and humanities as a way to engage with the good, the true, and the beautiful. At UVA, 
-				she is involved with Catholic Hoos and handles events coordination for Hoos for Life, in addition
-				 to contributing to the Arena.</p>
-  			</div>
+		<img src={Profile_zosia.src} alt="Profile Photo" class="card-image" />
+		<div class="card-text">
+			<p>
+				<b>Zosia Collins, Founder and Chief Editor</b><br />Zosia is a
+				first year at UVA, where she is pursuing a degree in the
+				extraordinarily practical field of Classics. Besides editing The
+				Arena, she is an intern at the Institute for Family Studies, a
+				fellow at the Blue Ridge Center, and highly involved with
+				Catholic Hoos. Although a very busy person, she will make time
+				for anyone who wishes to discuss flute music, good literature,
+				writing novels, or ancient philosophy.
+			</p>
+		</div>
+		<img
+			src={Profile_charlie_wilcoxon.src}
+			alt="Profile Photo"
+			class="card-image"
+		/>
+		<div class="card-text">
+			<p>
+				<b>Charles Wilcoxon, Editor</b><br />Coming from Columbus, Ohio,
+				Charles is a first-year student at UVA studying history. He is
+				involved in the altar service and parish maintenance ministries
+				with Catholic Hoos, and, alongside Mr. Miller and Miss DeBono,
+				he is a founder of CREDO Apologetics. Be careful getting into
+				conversations with him about history, philosophy, literature,
+				film, or economics —you might be there for a while. Especially
+				dangerous, however, is picking his brain on Star Wars and Lord
+				of the Rings.
+			</p>
+		</div>
+		<img src={Profile_maude.src} alt="Profile Photo" class="card-image" />
+		<div class="card-text">
+			<p>
+				<b>Pamella Parker, Editor</b><br />Pamella is a first year
+				Chemistry major at UVA. You may know her better by her middle
+				name, Maude. She still doesn’t know what her parents were
+				thinking. She’s known for her sharp sense of humor, practical
+				mindset, and ability to keep things both thoughtful and
+				down-to-earth. She’ll talk your ear off about anything, and
+				whatever her opinion may be, it will certainly be a strong one!
+			</p>
+		</div>
+		<img
+			src={Profile_charlie_miller.src}
+			alt="Profile Photo"
+			class="card-image"
+		/>
+		<div class="card-text">
+			<p>
+				<b>Charles Miller, Editor</b><br />Charlie is a first-year at
+				UVA from Richmond VA planning on majoring in Economics and
+				Finance. He is involved in the altar service and men's
+				ministries with Catholic Hoos, and is the founder of the CREDO
+				Apologetics club. He enjoys playing table tennis, spikeball,
+				chess, poker, basketball, pool and guitar. He enjoys discussing
+				philosophy and theology particularly in the realms of Catholic
+				apologetics.
+			</p>
+		</div>
+		<img src={Profile_gianna.src} alt="Profile Photo" class="card-image" />
+		<div class="card-text">
+			<p>
+				<b>Gianna DeBono, Editor</b><br />Gianna is a first-year from
+				Greenwich, CT, interested in majoring in Political Philosophy,
+				Policy and Law. She has a big love for music and is a member of
+				the Virginia Belles, a Capella group here on grounds. She’s also
+				a fan of philosophy and politics and is in the Jefferson
+				Literary and Debate Society. She plays intramural soccer in her
+				free time and is involved with Catholic Hoos on their service
+				council and the CREDO Apologetics group.
+			</p>
+		</div>
+		<img src={Profile_keira.src} alt="Profile Photo" class="card-image" />
+		<div class="card-text">
+			<p>
+				<b>Keira Thomas, Editor</b><br />Originally from Front Royal VA,
+				Keira is a first year at UVA, majoring in History and English.
+				An aspiring teacher, Keira loves to discuss literature and
+				humanities as a way to engage with the good, the true, and the
+				beautiful. At UVA, she is involved with Catholic Hoos and
+				handles events coordination for Hoos for Life, in addition to
+				contributing to the Arena.
+			</p>
+		</div>
+		<img src={Profile_bridget.src} alt="Profile Photo" class="card-image" />
+		<div class="card-text">
+			<p>
+				<b>Bridget Noonan, Editor</b><br />Bridget is a first-year at
+				the University of Virginia planning to study Politics and
+				Economics. She is currently involved at UVA as the Finance Chair
+				for A Moment of Magic, as the Website Manager for Catholic Hoos,
+				and as an active member of Undergraduate Constitutional Law and
+				Hoos For Life. Bridget enjoys deep conversations about subjects
+				that pique her interest and particularly always loves to discuss
+				political theory and philosophy or literature and film reviews.
+			</p>
+		</div>
 	</div>
 	<style>
-  		.card {
-    		display: grid;
-    		grid-template-columns: 1fr;  /* single column on mobile */
-    		gap: 0.6rem;
+		.card {
+			display: grid;
+			grid-template-columns: 1fr; /* single column on mobile */
+			gap: 0.6rem;
 			align-items: center;
-  		}
+		}
 		.card-image {
-    		width: 200px;
-   			height: 200px;
-    		border-radius: 50%;
-    		object-fit: cover;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			object-fit: cover;
 			justify-self: center;
-  		}
-  		@media (min-width: 640px) {
-    		.card {
-      		grid-template-columns: 250px 1fr;  /* fixed image width + fluid text */
-    		}
-  		}
+		}
+		@media (min-width: 640px) {
+			.card {
+				grid-template-columns: 250px 1fr; /* fixed image width + fluid text */
+			}
+		}
 	</style>
 </Layout>
