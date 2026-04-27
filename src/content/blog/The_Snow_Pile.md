@@ -3,7 +3,7 @@ title: 'The Snow Pile'
 description: 'A Literary Feature'
 author: 'William Thissell'
 pubDate: 'Apr 26 2026'
-heroImage: '../../assets/Post_3_pic.jpg'
+heroImage: '../../assets/Generic_post_pic.jpg'
 ---
 
 
