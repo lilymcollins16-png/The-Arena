@@ -3,7 +3,7 @@ title: 'An Apology Owed: How Dostoyevsky Reminds Us That We Need Plato More Than
 description: 'Lorem ipsum dolor sit amet'
 author: 'Zosia Collins'
 pubDate: 'Apr 09 2026'
-heroImage: '../../assets/blog-placeholder-3.jpg'
+heroImage: '../../assets/Post_1_pic.jpg'
 ---
 
 “Discussion”. For most humanities students at UVA, this word evokes an ordeal involving sitting at cramped desks under fluorescent light in awkward silence while the T.A. looks around desperately for someone who is willing to compromise their nonchalance in order to gain a participation point. This scene would surely have shocked Thomas Jefferson, who intended UVA to be a testament to the "illimitable freedom of the human mind". Yet, in the halls of Mr. Jefferson’s university, our minds are being stifled by an oppressive consensual silence. Fyodor Dostoyevsky’s *Crime and Punishment* also features a university student, Raskolnikov, although we meet him in the dank streets of St. Petersburg rather than in the classroom. Raskolnikov, too, seems to have forgotten the original meaning of “discussion”; the agitated conversations we hear him having are all with himself. Separated by hundreds of years, UVA undergrads and Raskolnikov find themselves in the same plight; although drenched in intellectualism, they are unable to force themselves into dialogue with others. Why is this a real problem— and moreover, what can we do about it?
