@@ -1,0 +1,70 @@
+---
+title: "Courting Scarlett O’Hara: On Nostalgia, America, and Conservative Love"
+description: 'Reflections on America'
+author: 'Zosia Collins'
+pubDate: 'July 04 2026'
+heroImage: '../../assets/Post_9_pic.jpg'
+---
+
+
+
+Carl Sandburg’s poem “Chicago,” while technically about the titular city, can also be read as a portrayal of America as a country 
+
+with lifted head singing so proud to be alive and coarse and strong and cunning.  
+Flinging magnetic curses amid the toil of piling job on job, here is a tall bold slugger set vivid against the little soft cities;<br />
+Fierce as a dog with tongue lapping for action, cunning as a savage pitted against the wilderness.<sup>1</sup> 
+
+Through Sandburg’s words, America emerges as rugged, stubborn, and brimming with life. Similarly gritty and resilient is Scarlett O’Hara, the heroine of Margaret Mitchell’s Southern epic *Gone with the Wind*. These qualities set Scarlett apart from the rest of struggling Southern society but also come with flaws—harshness, selfishness, and ambition—which tempt men to fall into the twin traps of idealization and exhaustion as they attempt to court her. The challenge of embracing Scarlett without idealizing her and correcting Scarlett without rejecting her provides a vital model for conservatives struggling to love our lively, restless America. 
+
+*Gone with the Wind* revolves around one of the most famous love triangles in American culture. Scarlett O’Hara, the flirtatious and flighty daughter of a plantation owner, is in love with her genteel and intellectual Southern neighbor, Ashley Wilkes, who harbors a lifelong longing for Scarlett that haunts him throughout the novel. Another man, however, also loves Scarlett: Rhett Butler, a notorious rapscallion who does business with the hated Northerners and funds the local “bad house.” Rhett eventually wins Scarlett’s hand; however, he does not manage to win her heart until the end of the novel. Tragically, as soon as Scarlett realizes her love for him, an exhausted Rhett forsakes their relationship and decides to leave her. Scarlett, her usual stubborn, determined self, closes the book resolving to win Rhett back. 
+
+Ashley and Rhett present interesting counterpoints to each other in the ways that they love Scarlett. Ashley’s love is nostalgic even more than it is carnal. We hear that as he embraces Scarlett, “spring was back again, that half-forgotten balmy spring of green rustlings and murmurings, a spring of ease and indolence, careless days when the desires of youth were warm in his body.”<sup>2</sup> Ashley loves Scarlett’s beautiful body like he loves the graceful, stately lines of his family’s war-ruined estate. Holding her allows him to return, if only momentarily, to the happy days riding on the lawn and eating freshly-prepared barbecue. However, throughout the novel, Ashley sees Scarlett as better than she actually is, lauding her for “bravery and unselfishness.”<sup>3</sup> While Scarlett certainly is brave, she is also extraordinarily selfish. Ashley’s sense of nostalgia crowds out reality until the Scarlett he sees before him is a mere ideal, more a figment of his imagination than the flesh-and-blood woman that she is. 
+
+Rhett, meanwhile, sees Scarlett as she is—“hard and greedy and unscrupulous.”<sup>4</sup> Yet despite seeming merely sensual and aloof for much of the novel, he claims to love Scarlett on a much deeper level: as he's leaving, he says that “I wanted to take care of you, to … protect you.”<sup>5</sup> However, this profound love eventually wears thin over the course of the novel. Rhett loses his breath chasing after Scarlett, leading Pat Conroy to conclude in his famous introduction to *Gone with the Wind* that “his one great flaw was making the terrible and exhilarating mistake of falling in love with Scarlett O’Hara.”<sup>6</sup>  
+
+So, is Conroy right about the danger of loving Scarlett? The key to answering this question—and the key to understanding the whole novel—is to acknowledge that Scarlett O’Hara is much more than a coquettish, selfish, and occasionally vicious woman. Elsewhere in  his introduction, Conroy states that “it is Scarlett herself who represents the unimaginable changes that the war has wrought on all Southerners.”<sup>7</sup> In other words, Scarlett is a personification of the South. I agree, to a point. However, I think that Mr. Conroy is far too narrow in his analysis. Yes, Scarlett is the South, with her fierce loyalty to her land that is only hardened by the suffering of war. But in addition, Scarlett has the economic cunning and drive of the North, and the restless, pioneering spirit of the West. In short, like Sandburg’s Chicago, Scarlett is emblematic of not one region of America, but of America as a whole. 
+
+The one thing that stays consistent within Scarlett despite her wartime transformation into a hardened, calculating woman is a perpetual discontent coupled with immutable stubbornness. In the idyllic antebellum days, she is not content with the dozens of eligible suitors who fall at her feet; she must have Ashley, although he is the one man who will not have her. She ends the novel in much the same place, this time not content to have Ashley; she must have Rhett, although now he is the man who is out of reach. Scarlett relishes such impossible  pursuits; she typically wants what she cannot have and revels in attempting to attain it. This stubborn, spirited discontent is what makes Scarlett so distinctive, and it is also what made the United States, the scrappy underdog that it was, into a global superpower. From the Revolution to the Cold War, America has never been content to sit and wait out a challenge. Thus, I argue that Scarlett’s continual restlessness is where she most truly embodies the American spirit. 
+
+Scarlett’s restlessness is at once her greatest strength and  her greatest weakness. The same discontent that drives her to build a successful lumber mill also drives her to marry her sister’s longtime beau, Frank Kennedy, on a whim. Scarlett is callous in her drive for success; her steely disposition allows her to stand firm in the upheavals of the Civil War but also makes her hard and cold to the touch. This is the aspect of the American spirit that we do not wish to recognize. The man who works his way from rags to riches is as frequently a self-interested and blindly ambitious individual as he is a caring and grateful one. America’s rough side is a moral neutral rather than a moral good; it has a great propensity for excellence and a great propensity for brutality. 
+
+Establishing Scarlett as America completely reframes the love of Ashley and Rhett. In this light, Ashley’s love is immediately recognizable as one camp within modern conservatism—the side which revels in the past more than it looks towards the future. This school of thought yearns for a time long gone, a “golden age” of old. Perhaps if we hadn’t had Seneca Falls, things wouldn’t be so bad. Perhaps if we hadn’t had Vatican II, things wouldn’t be so bad. Perhaps if we didn’t have the internet, things wouldn’t be so bad. Perhaps they, too, can attain the “half-forgotten balmy spring of green rustlings and murmurings” by embracing the America they remember from all those years ago, before things went south and life became cruel. Moreover, this subset tends to overlook the faults of America gone by, holding her up as some golden calf. They see huge, welcoming plains instead of the crowded, dingy slums of New York; they see bustling port cities instead of the slaves unloading the ships. Like Ashley, they love an America that exists more in memory than in history.
+
+The Rhett we see at the close of *Gone with the Wind* represents another camp within conservatism. He has fallen out of love with the American ideal; his pursuit of Scarlett’s restless, roaming spirit has left him exhausted, and her faults have left him disillusioned. As he tells her: “I’ve reached the end of roaming, Scarlett. I’m forty-five— the age when man begins to value some of the things he’s thrown away so lightly in youth, the clannishness of families, honor and security, roots that go deep.”<sup>8</sup> No longer does he want the constant exertion of chasing after the deeply flawed Scarlett; perhaps he  doesn’t need her, after all. In the same way, the disillusioned camp of conservatives questions whether they need our social and moral foundations: perhaps religion isn’t so important, after all. Perhaps abortion isn’t really so terrible, after all. Perhaps traditional marriages aren’t so valuable, after all. This branch of conservatism is a hollow one, divorced from the true American Spirit, more driven by the blind following of party figureheads and economic power than anything else. 
+
+So… who is right? It is a difficult question when presented with two flawed options. Ashley cannot be our model—he is just a fool. As Rhett puts it in a burst of insightfulness, “He’s only a gentleman caught in a world he doesn’t belong in, trying to make a poor best of it by the rules of the world that’s gone.”<sup>9</sup> We cannot recover a vanished age, nor pretend it was ever perfect.
+
+Could it possibly be that Rhett is the model for conservatives? Beholding him hungover and bloated as he leaves Scarlett, one would be loath to conclude this. In order to accept Rhett, we must necessarily re-evaluate his love for Scarlett. Contrary to what Conroy says, Rhett’s great flaw was not, in fact, to fall in love with Scarlett. Pursuing her may have broken him, but it also transformed him for the better. The Rhett before Scarlett would never have pathetically wept about his faults and his love for his family.  But the Rhett before Scarlett would also not have doted on his daughter to a point where he was reduced to shambles upon her untimely death. He would not have waited for hours outside his wife’s room after she miscarried, desperate for her to call on him for help. Loving Scarlett broke Rhett in the most delightful, vulnerable way possible; no longer was he just an aloof, rambunctious blockade-runner with no ties and a dashing smile. Rhett’s greatest fault was to *stop* loving Scarlett. Without his pursuit of her—her spirit, her stubbornness, and her fire for life—he is just an unfavorable, tired, and slightly overweight sensualist. By loving her, he experienced a deep longing which mirrored Scarlett’s perpetual restlessness. Seeking out her best qualities allowed him to share in them. 
+
+Rhett sees Scarlett for what she truly is, beholding the brilliant tenacity and resilience which lie under her shallow charms. At the same time, he sees the crippling faults which cling to her throughout the novel. When Scarlett is caught in a compromising situation with Ashley and fears social repercussions, Rhett rebukes her for her cowardice and forces her to go to the evening’s party regardless. Rhett recognizes Scarlett’s aversion to discomfort and pushes her to fight back against it, helping her confront her own faults and root out the imperfections which are inflexibly linked to her virtue. 
+
+Conservatives today must be Rhett Butler at the height of his courtship of Scarlett: we need to wholeheartedly pursue the restless American spirit so that we might share in the best America has to offer. Yes, it will be tiring and will tempt us daily to walk away. Yes, our opponents will give us nothing but cold stares and shut doors, much like the matrons of Atlanta society. And yet, without it, we are nothing. Once the “conservative” party permits abortion, gay marriage, and sexual promiscuity, how can it truly be connected to its Christian roots? However, we need to pursue our America without idealizing the past. Our country possesses manifold faults which are intertwined with dazzling virtues; part of loving her, therefore, is correcting these shortcomings. We need to pragmatically see America for what she is, but not stop loving America for what she ought to be. 
+
+*Gone with the Wind* closes with Scarlett resolving to get Rhett back. However, conservatives today cannot rely on America to likewise pursue them. It is up to them to love the wild, reckless, and perhaps unattainable American ideal *for*, rather than in spite of, all its grittiness and restlessness. After all, as Sandburg writes in the concluding lines of “Chicago,” “under [her] wrist is the pulse, and under [her] ribs the heart of the people.”<sup>10</sup>
+
+
+*Notes*
+
+Carl Sandburg, "Chicago," *Poetry Foundation*, originally published in *Poetry* (March 1914),
+lines 10-12, https://www.poetryfoundation.org/poetrymagazine/poems/12840/chicago.
+
+Margaret Mitchell, *Gone with the Wind* (New York: Scribner, 2011), 502.
+
+Mitchell, 496
+
+Mitchell, 953
+
+Mitchell, 952
+
+Mitchell, 14
+
+Mitchell, 13
+
+Mitchell, 956
+
+Mitchell, 951
+
+Sandburg, “Chicago,” line 21. 
+
+
+

@@ -3,6 +3,7 @@ import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import AboutHeroImage from "../assets/issue1.jpg";
+import AM250Image from "../assets/AM250.jpg";
 import Logo from "../assets/logo.png";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 ---
@@ -34,6 +35,17 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 					}
 				</style>
 				<br />
+				<a href="/pdfs/ArenaAM250.pdf" target="_blank">
+					<img
+						src={AM250Image.src}
+						alt="America250"
+						width="500"
+						height="600"
+					/>
+					<br />
+					<b> Read our current issue →</b>
+					<br />
+				</a>
 				<a href="/pdfs/Issue_1.pdf" target="_blank">
 					<img
 						src={AboutHeroImage.src}
@@ -41,9 +53,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 						width="500"
 						height="600"
 					/>
-					<br />
-					<b> Read our current issue →</b>
-					</p>
+				<br />
 				</a>
 			</div>
 		</main>
