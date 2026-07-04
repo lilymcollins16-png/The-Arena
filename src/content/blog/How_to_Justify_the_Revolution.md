@@ -1,6 +1,6 @@
 ---
 title: 'Enlightened Protestantism: How Christians Justified the American Revolution'
-description: 'Lorem ipsum dolor sit amet'
+description: 'Reflections on America'
 author: 'Charles Miller'
 pubDate: 'July 04 2026'
 heroImage: '../../assets/Post_7_pic.jpg'

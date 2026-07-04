@@ -45,26 +45,17 @@ Conservatives today must be Rhett Butler at the height of his courtship of Scarl
 
 *Notes*
 
-Carl Sandburg, "Chicago," *Poetry Foundation*, originally published in *Poetry* (March 1914),
+1. Carl Sandburg, "Chicago," *Poetry Foundation*, originally published in *Poetry* (March 1914),
 lines 10-12, https://www.poetryfoundation.org/poetrymagazine/poems/12840/chicago.
-
-Margaret Mitchell, *Gone with the Wind* (New York: Scribner, 2011), 502.
-
-Mitchell, 496
-
-Mitchell, 953
-
-Mitchell, 952
-
-Mitchell, 14
-
-Mitchell, 13
-
-Mitchell, 956
-
-Mitchell, 951
-
-Sandburg, “Chicago,” line 21. 
+2. Margaret Mitchell, *Gone with the Wind* (New York: Scribner, 2011), 502.
+3. Mitchell, 496
+4. Mitchell, 953
+5. Mitchell, 952
+6. Mitchell, 14
+7. Mitchell, 13
+8. Mitchell, 956
+9. Mitchell, 951
+10. Sandburg, “Chicago,” line 21. 
 
 
 
