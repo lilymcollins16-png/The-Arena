@@ -3,7 +3,7 @@ title: 'American Poetry Compilation'
 description: 'A Literary Feature'
 author: 'From Your Editors'
 pubDate: 'July 4 2026'
-heroImage: '../../assets/Generic_post_pic.jpg'
+heroImage: '../../assets/Poetry.png'
 ---
 
 1. **“The New Colossus" – Emma Lazarus**
