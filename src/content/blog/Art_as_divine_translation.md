@@ -4,6 +4,7 @@ description: 'Zosia Collins responds to Charles Wilcoxon'
 author: 'Zosia Collins'
 pubDate: 'Apr 22 2026'
 heroImage: '../../assets/Post_2_pic.jpg'
+tagline: "The Journal's Arena, Part Two"
 ---
 
 

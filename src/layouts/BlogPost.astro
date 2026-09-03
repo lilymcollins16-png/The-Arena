@@ -8,7 +8,7 @@ import Header from '../components/Header.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, author, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, author, pubDate, updatedDate, heroImage, tagline } = Astro.props;
 ---
 
 <html lang="en">
@@ -75,7 +75,10 @@ const { title, description, author, pubDate, updatedDate, heroImage } = Astro.pr
 							}
 						</div>
 						<h1>{title}</h1>
+						<h4>{tagline && tagline}</h4>
+						<br />
 						<h5>{author}</h5>
+						<br />
 						<hr />
 					</div>
 					<slot />

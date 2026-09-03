@@ -4,6 +4,7 @@ description: 'A Literary Feature'
 author: 'Gianna DeBono'
 pubDate: 'Apr 26 2026'
 heroImage: '../../assets/Generic_post_pic.jpg'
+category: 'poetry'
 ---
 
 
