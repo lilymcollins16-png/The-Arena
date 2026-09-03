@@ -96,7 +96,7 @@
 }
 
 .hero-photo__frame {
-  aspect-ratio: 21 / 9;
+  aspect-ratio: 19 / 9;
   border: 1px dashed var(--color-line);
   background: var(--color-paper-alt);
   display: flex;

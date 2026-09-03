@@ -185,23 +185,17 @@ const reviews = allBlogPosts.filter((post) => post.data.category === "reviews");
 					<div class="section__heading">
 						<h2 id={"essays-heading"}>Essays</h2>
 					</div>
-					<p class="category-section__note">yo!</p>
+					<p class="category-section__note">Compositions engaging with philosophy, politics, literature, and the conservative tradition.</p>
 					<div class="category-grid">
 						{
 							essays.length > 0 &&
 								essays.map((article) => (
 									<div class="category-card">
 										<span class="category-card__mark">
-											{" "}
-											+{" "}
+											{article.data.heroImage}
 										</span>
 										<p class="category-card__title">
 											{article.data.title}
-										</p>
-										<p class="category-card__note">
-											Published pieces will appear here as
-											cards with a title, author, and
-											short excerpt.
 										</p>
 									</div>
 								))
@@ -222,16 +216,10 @@ const reviews = allBlogPosts.filter((post) => post.data.category === "reviews");
 								literaryFeature.map((article) => (
 									<div class="category-card">
 										<span class="category-card__mark">
-											{" "}
-											+{" "}
+											{article.data.heroImage}
 										</span>
 										<p class="category-card__title">
 											{article.data.title}
-										</p>
-										<p class="category-card__note">
-											Published pieces will appear here as
-											cards with a title, author, and
-											short excerpt.
 										</p>
 									</div>
 								))
@@ -252,16 +240,10 @@ const reviews = allBlogPosts.filter((post) => post.data.category === "reviews");
 								reviews.map((article) => (
 									<div class="category-card">
 										<span class="category-card__mark">
-											{" "}
-											+{" "}
+											{article.data.heroImage}
 										</span>
 										<p class="category-card__title">
 											{article.data.title}
-										</p>
-										<p class="category-card__note">
-											Published pieces will appear here as
-											cards with a title, author, and
-											short excerpt.
 										</p>
 									</div>
 								))

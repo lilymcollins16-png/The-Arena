@@ -106,9 +106,6 @@ const posts = (await getCollection('blog')).sort(
 		<Header />
 		<main>
 			<section>
-				<div class="section__heading">
-					<h2>Articles</h2>
-				</div>
 				<ul>
 					{
 						posts.map((post) => (
