@@ -397,10 +397,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2rem;
+  width: auto;
   height: 2rem;
   border: 1px solid var(--color-line);
-  border-radius: 50%;
+  border-radius: 95%;
   margin-bottom: 0.9rem;
   color: var(--color-oxblood);
   font-size: 1.1rem;
