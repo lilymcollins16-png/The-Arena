@@ -20,25 +20,21 @@ import Layout from "../layouts/BlogPost.astro";
 	pubDate={new Date("March 22 2026")}
 	heroImage={AboutHeroImage}
 >
-	<p>
-		<i>
-			It is not the critic who counts; not the man who points out how the
-			strong man stumbles or where the doer of deeds could have done them
-			better. The credit belongs to the man who is actually in the arena,
-			whose face is marred by dust and sweat and blood; who strives
-			valiantly; who errs, and comes short again and again, because there
-			is no effort without error and shortcoming; but who does actually
-			strive to do the deeds; who knows the great enthusiasms, the great
-			devotions; who spends himself in a worthy cause; who at the best
-			knows in the end the triumph of high achievement, and who at the
-			worst, if he fails, at least fails while daring greatly, so that his
-			place shall never be with those cold and timid souls who know
-			neither victory nor defeat.
-		</i>
-	</p>
-	<p style="text-align: center;">
-		Theodore Roosevelt, “Citizenship in a Republic,” 1910
-	</p>
+	<blockquote class="arena-pullquote">
+		It is not the critic who counts; not the man who points out how the
+		strong man stumbles or where the doer of deeds could have done them
+		better. The credit belongs to the man who is actually in the arena,
+		whose face is marred by dust and sweat and blood; who strives
+		valiantly; who errs, and comes short again and again, because there
+		is no effort without error and shortcoming; but who does actually
+		strive to do the deeds; who knows the great enthusiasms, the great
+		devotions; who spends himself in a worthy cause; who at the best
+		knows in the end the triumph of high achievement, and who at the
+		worst, if he fails, at least fails while daring greatly, so that his
+		place shall never be with those cold and timid souls who know
+		neither victory nor defeat.
+		<cite>Theodore Roosevelt, “Citizenship in a Republic,” 1910</cite>
+	</blockquote>
 	<p>
 		The Arena Journal is an intellectual publication rooted in conservatism
 		and founded to bring the intellectual rigor and vibrancy of conservative
@@ -55,8 +51,9 @@ import Layout from "../layouts/BlogPost.astro";
 		that preserves a culture of charity, rigor, and courage among
 		conservatives at UVA.
 	</p>
-	<hr style="border: none; border-top: 1px solid #d1d5db; margin: 24px 0;" />
-	<h3 style="text-align: center;">Our contributors:</h3>
+	<div class="arena-section-heading">
+		<h3>Our Contributors</h3>
+	</div>
 	<div class="card">
 		<img src={Profile_zosia.src} alt="Profile Photo" class="card-image" />
 		<div class="card-text">
@@ -179,6 +176,46 @@ import Layout from "../layouts/BlogPost.astro";
 		</div>
 	</div>
 	<style>
+		.arena-pullquote {
+			margin: 2rem auto;
+			max-width: 42rem;
+			padding: 1.5rem 0 1.5rem 1.5rem;
+			border-left: 3px solid var(--color-oxblood, #6e1423);
+			font-style: italic;
+			font-size: 1.1rem;
+			line-height: 1.6;
+			color: var(--color-ink-soft, inherit);
+		}
+		.arena-pullquote cite {
+			display: block;
+			margin-top: 1rem;
+			font-style: normal;
+			font-size: 0.8rem;
+			letter-spacing: 0.15em;
+			text-transform: uppercase;
+			color: var(--color-oxblood, inherit);
+			opacity: 0.85;
+		}
+		.arena-section-heading {
+			display: flex;
+			align-items: baseline;
+			gap: 0.85rem;
+			margin: 2.5rem 0 1.75rem;
+		}
+		.arena-section-heading::after {
+			content: "";
+			flex: 1 1 auto;
+			height: 1px;
+			background: var(--color-oxblood, #6e1423);
+		}
+		.arena-section-heading h3 {
+			margin: 0;
+			font-size: 0.85rem;
+			letter-spacing: 0.2em;
+			text-transform: uppercase;
+			color: var(--color-oxblood, inherit);
+			white-space: nowrap;
+		}
 		.card {
 			display: grid;
 			grid-template-columns: 1fr; /* single column on mobile */
@@ -191,6 +228,7 @@ import Layout from "../layouts/BlogPost.astro";
 			border-radius: 50%;
 			object-fit: cover;
 			justify-self: center;
+			border: 1px solid var(--color-line, #d6d2c8);
 		}
 		@media (min-width: 640px) {
 			.card {

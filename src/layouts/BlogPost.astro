@@ -5,6 +5,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
+import "../styles/home.css";
 
 type Props = CollectionEntry<'blog'>['data'];
 
@@ -34,7 +35,7 @@ const { title, description, author, pubDate, updatedDate, heroImage, tagline } =
 				max-width: calc(100% - 2em);
 				margin: auto;
 				padding: 1em;
-				color: rgb(var(--gray-dark));
+				color: var(--color-ink-soft, rgb(var(--gray-dark)));
 			}
 			.title {
 				margin-bottom: 1em;
@@ -44,18 +45,27 @@ const { title, description, author, pubDate, updatedDate, heroImage, tagline } =
 			}
 			.title h1 {
 				margin: 0 0 0.5em 0;
+				color: var(--color-ink, rgb(var(--black)));
 			}
 			.date {
 				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
+				font-size: 0.72rem;
+				letter-spacing: 0.2em;
+				text-transform: uppercase;
+				color: var(--color-oxblood, rgb(var(--gray)));
 			}
 			.last-updated-on {
 				font-style: italic;
 			}
+			.title hr {
+				border: none;
+				border-top: 3px double var(--color-oxblood, #6e1423);
+				margin-top: 1em;
+			}
 		</style>
 	</head>
 
-	<body>
+	<body class="arena-home">
 		<Header />
 		<main>
 			<article>
