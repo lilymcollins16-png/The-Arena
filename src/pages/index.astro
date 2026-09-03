@@ -4,6 +4,7 @@ import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import AboutHeroImage from "../assets/issue1.jpg";
 import AM250Image from "../assets/AM250.jpg";
+import Arena_Photo from "../assets/colosseum.jpeg"
 import Logo from "../assets/logo.png";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 import "../styles/home.css";
@@ -43,14 +44,15 @@ const reviews = allBlogPosts.filter((post) => post.data.category === "reviews");
 				</p>
 			</header>
 
-			<!-- Hero photo placeholder -->
+			<!-- Hero photo -->
 			<div class="hero-photo">
-				<div class="hero-photo__frame">
-					<p class="hero-photo__label">
-						<strong>Photograph</strong>
-						1600 &times; 686px recommended
-					</p>
-				</div>
+				<img
+					src={Arena_Photo.src}
+					alt="The Colosseum"
+					class="hero-photo__frame"
+					width="1600"
+					height="686"
+				/>
 			</div>
 
 			<!-- Mission statement -->
@@ -70,7 +72,7 @@ const reviews = allBlogPosts.filter((post) => post.data.category === "reviews");
 				<div class="featured-essay">
 					<span class="featured-essay__label">Essays</span>
 					<h3 class="featured-essay__title">
-						How to Justify the Revolution
+						Enlightened Protestantism: How Christians Justified the American Revolution
 					</h3>
 					<p class="featured-essay__byline">By Charlie Miller</p>
 					<div class="featured-essay__excerpt">
