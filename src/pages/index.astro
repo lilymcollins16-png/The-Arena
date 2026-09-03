@@ -6,6 +6,25 @@ import AboutHeroImage from "../assets/issue1.jpg";
 import AM250Image from "../assets/AM250.jpg";
 import Logo from "../assets/logo.png";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
+import "../styles/home.css";
+
+const categories = [
+	{
+		name: "Essays",
+		singular: "Essay",
+		note: "Argument and analysis on ideas, culture, and civic life.",
+	},
+	{
+		name: "Poetry",
+		singular: "Poem",
+		note: "Verse selected from student and community submissions.",
+	},
+	{
+		name: "Reviews",
+		singular: "Review",
+		note: "Considered takes on books, exhibitions, and ideas in the news.",
+	},
+];
 ---
 
 <!doctype html>
@@ -15,46 +34,148 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 	</head>
 	<body>
 		<Header />
-		<main>
-			<div style="text-align: center;">
+		<main class="arena-home">
+			<!-- Masthead -->
+			<header class="masthead">
 				<img
 					src={Logo.src}
-					class="logo"
-					alt="Logo"
-					width="500"
-					height="150"
+					alt="The Arena Journal logo"
+					class="masthead__logo"
+					width="64"
+					height="64"
 				/>
-				<style>
-					.logo {
-						width: 200px;
-						height: 200px;
-						border-radius: 50%;
-						object-fit: cover;
-						justify-self: center;
-						margin: 20px;
-					}
-				</style>
-				<br />
-				<a href="/pdfs/ArenaAM250.pdf" target="_blank">
-					<img
-						src={AM250Image.src}
-						alt="America250"
-						width="500"
-						height="600"
-					/>
-					<br />
-					<b> Read our current issue →</b>
-					<br />
-				</a>
-				<a href="/pdfs/Issue_1.pdf" target="_blank">
-					<img
-						src={AboutHeroImage.src}
-						alt="Issue1"
-						width="500"
-						height="600"
-					/>
-				<br />
-				</a>
+				<h1 class="masthead__title">The Arena Journal</h1>
+				<p class="masthead__tagline">
+					Essays on ideas, culture, and the public square.
+				</p>
+				<p class="masthead__meta">
+					<span>Vol. I</span>
+					<span>Published quarterly</span>
+				</p>
+			</header>
+
+			<!-- Hero photo placeholder -->
+			<div class="hero-photo">
+				<div class="hero-photo__frame">
+					<p class="hero-photo__label">
+						<strong>Photograph</strong>
+						1600 &times; 686px recommended
+					</p>
+				</div>
+			</div>
+
+			<!-- Mission statement -->
+			<div class="statement">
+				<p>
+					The Arena Journal publishes long-form essays and argument at a
+					level too often missing from student discourse — writing that
+					takes ideas seriously, engages opposing views honestly, and
+					makes its case in the open.
+				</p>
+			</div>
+
+			<!-- Featured essay -->
+			<section class="section" aria-labelledby="featured-essay-heading">
+				<div class="section__heading">
+					<h2 id="featured-essay-heading">Featured Essay</h2>
+				</div>
+				<div class="featured-essay">
+					<span class="featured-essay__label">Essays</span>
+					<h3 class="featured-essay__title">[Essay Title]</h3>
+					<p class="featured-essay__byline">By [Author Name]</p>
+					<div class="featured-essay__excerpt">
+						<p>
+							This is placeholder copy standing in for the opening of a
+							featured essay. It should read like the real thing — a
+							strong first paragraph that sets up the argument and gives
+							a reader a reason to keep going, followed by enough of a
+							second paragraph to establish momentum before the text
+							fades out below.
+						</p>
+						<p>
+							Swap this paragraph, the title, and the byline above for
+							the actual excerpt when the essay is ready to feature.
+						</p>
+					</div>
+					<a href="#" class="btn">Continue Reading</a>
+				</div>
+			</section>
+
+			<!-- Current issue + archive -->
+			<section class="section" aria-labelledby="issues-heading">
+				<div class="section__heading">
+					<h2 id="issues-heading">Read the Journal</h2>
+				</div>
+				<div class="issues">
+					<a class="issue" href="/pdfs/ArenaAM250.pdf" target="_blank">
+						<span class="issue__label">Current Issue</span>
+						<div class="issue__cover">
+							<img src={AM250Image.src} alt="Cover of the America 250 issue of The Arena Journal" width="500" height="750" />
+						</div>
+						<h3 class="issue__title">The America 250 Issue</h3>
+						<p class="issue__dek">
+							Essays on the American founding, its inheritances, and what
+							is owed to a republic turning two hundred fifty.
+						</p>
+						<span class="issue__cta">Read the current issue</span>
+					</a>
+					<a class="issue" href="/pdfs/Issue_1.pdf" target="_blank">
+						<span class="issue__label">From the Archive</span>
+						<div class="issue__cover">
+							<img src={AboutHeroImage.src} alt="Cover of Issue No. 1 of The Arena Journal" width="500" height="750" />
+						</div>
+						<h3 class="issue__title">Issue No. 1</h3>
+						<p class="issue__dek">
+							Our inaugural issue, and the case for bringing rigorous
+							argument back into the room.
+						</p>
+						<span class="issue__cta">Read issue no. 1</span>
+					</a>
+				</div>
+			</section>
+
+			<!-- Mission / pull quote -->
+			<div class="quote-band">
+				<div class="quote-band__inner">
+					<blockquote>
+						An arena is not a place of comfort. It is where ideas are
+						tested, not merely asserted — and where the testing makes
+						them worth holding.
+					</blockquote>
+					<cite>The Editors</cite>
+				</div>
+			</div>
+
+			<!-- Categories -->
+			<div class="categories">
+				{categories.map((category) => (
+					<section class="category-section" aria-labelledby={`${category.name.toLowerCase()}-heading`}>
+						<div class="section__heading">
+							<h2 id={`${category.name.toLowerCase()}-heading`}>{category.name}</h2>
+						</div>
+						<p class="category-section__note">
+							{category.note}
+						</p>
+						<div class="category-grid">
+							<div class="category-card">
+								<span class="category-card__mark">+</span>
+								<p class="category-card__title">Add a {category.singular}</p>
+								<p class="category-card__note">
+									Published pieces will appear here as cards with a
+									title, author, and short excerpt.
+								</p>
+							</div>
+							<div class="category-card">
+								<span class="category-card__mark">+</span>
+								<p class="category-card__title">Add a {category.singular}</p>
+								<p class="category-card__note">
+									Published pieces will appear here as cards with a
+									title, author, and short excerpt.
+								</p>
+							</div>
+						</div>
+					</section>
+				))}
 			</div>
 		</main>
 		<Footer />

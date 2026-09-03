@@ -2,60 +2,96 @@
 const today = new Date();
 ---
 
-<footer>
-	<b>Contact us at:</b>
-	<br />
-	<a href="mailto:thearenajournal@gmail.com" class="email-link">
-		<svg
-			width="21"
-			height="20"
-			viewBox="0 0 21 20"
-			fill="none"
-			xmlns="http://www.w3.org/2000/svg"
-		>
-			<path
-				d="M18.6572 15.0002L13.1215 10.0002M8.35961 10.0002L2.82392 15.0002M2.40723 5.8335L9.21133 10.5964C9.7623 10.982 10.0378 11.1749 10.3374 11.2496C10.6021 11.3156 10.879 11.3156 11.1437 11.2496C11.4433 11.1749 11.7188 10.982 12.2698 10.5964L19.0739 5.8335M6.40723 16.6668H15.0739C16.474 16.6668 17.1741 16.6668 17.7089 16.3943C18.1793 16.1547 18.5617 15.7722 18.8014 15.3018C19.0739 14.767 19.0739 14.067 19.0739 12.6668V7.3335C19.0739 5.93336 19.0739 5.2333 18.8014 4.69852C18.5617 4.22811 18.1793 3.84566 17.7089 3.60598C17.1741 3.3335 16.474 3.3335 15.0739 3.3335H6.40723C5.0071 3.3335 4.30703 3.3335 3.77225 3.60598C3.30185 3.84566 2.91939 4.22811 2.67971 4.69852C2.40723 5.2333 2.40723 5.93336 2.40723 7.3335V12.6668C2.40723 14.067 2.40723 14.767 2.67971 15.3018C2.91939 15.7722 3.30185 16.1547 3.77225 16.3943C4.30703 16.6668 5.0071 16.6668 6.40723 16.6668Z"
-				stroke="#528a93"
-				stroke-linecap="round"
-				stroke-linejoin="round"></path>
-		</svg>
-		thearenajournal@gmail.com
-	</a>
-	<a href="https://www.instagram.com/arenajournaluva/" class="insta-link">
-		@arenajournaluva
-	</a>
-	<br />
-	<a
-		href="https://docs.google.com/forms/d/e/1FAIpQLSd035WWr2dE3HkFkNX1Wle8rznQGO44mk1UlKIm1xWdQXIKdA/viewform?usp=dialog"
-		class="email-link"
-		target="_blank"
-	>
-		Submit your writings here.
-	</a>
-	<br />
-	&copy; {today.getFullYear()} Hugo and Lily Collins. All rights reserved.
+<footer class="arena-footer">
+	<p class="arena-footer__heading">Contact</p>
+	<div class="arena-footer__links">
+		<a href="mailto:thearenajournal@gmail.com" class="arena-footer__link">
+			<svg
+				width="18"
+				height="17"
+				viewBox="0 0 21 20"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M18.6572 15.0002L13.1215 10.0002M8.35961 10.0002L2.82392 15.0002M2.40723 5.8335L9.21133 10.5964C9.7623 10.982 10.0378 11.1749 10.3374 11.2496C10.6021 11.3156 10.879 11.3156 11.1437 11.2496C11.4433 11.1749 11.7188 10.982 12.2698 10.5964L19.0739 5.8335M6.40723 16.6668H15.0739C16.474 16.6668 17.1741 16.6668 17.7089 16.3943C18.1793 16.1547 18.5617 15.7722 18.8014 15.3018C19.0739 14.767 19.0739 14.067 19.0739 12.6668V7.3335C19.0739 5.93336 19.0739 5.2333 18.8014 4.69852C18.5617 4.22811 18.1793 3.84566 17.7089 3.60598C17.1741 3.3335 16.474 3.3335 15.0739 3.3335H6.40723C5.0071 3.3335 4.30703 3.3335 3.77225 3.60598C3.30185 3.84566 2.91939 4.22811 2.67971 4.69852C2.40723 5.2333 2.40723 5.93336 2.40723 7.3335V12.6668C2.40723 14.067 2.40723 14.767 2.67971 15.3018C2.91939 15.7722 3.30185 16.1547 3.77225 16.3943C4.30703 16.6668 5.0071 16.6668 6.40723 16.6668Z"
+					stroke="currentColor"
+					stroke-width="1.4"
+					stroke-linecap="round"
+					stroke-linejoin="round"></path>
+			</svg>
+			thearenajournal@gmail.com
+		</a>
+		<a href="https://www.instagram.com/arenajournaluva/" class="arena-footer__link">
+			@arenajournaluva
+		</a>
+		<div class="arena-footer__submit">
+			<a
+				href="https://docs.google.com/forms/d/e/1FAIpQLSd035WWr2dE3HkFkNX1Wle8rznQGO44mk1UlKIm1xWdQXIKdA/viewform?usp=dialog"
+				class="arena-footer__link"
+				target="_blank"
+			>
+				Submit your writing
+			</a>
+		</div>
+	</div>
+	<p class="arena-footer__copyright">
+		&copy; {today.getFullYear()} Hugo and Lily Collins. All rights reserved.
+	</p>
 </footer>
 
 <style>
-	footer {
-		padding: 2em 1em 6em 1em;
-		background: linear-gradient(var(--gray-gradient)) no-repeat;
-		color: rgb(var(--gray));
+	.arena-footer {
+		border-top: 3px double #6e1423;
+		background: #1c1b1a;
+		color: #f3f2ee;
+		padding: 3rem 1.5rem 3.5rem;
 		text-align: center;
 	}
-	.email-link, .insta-link  {
+
+	.arena-footer__heading {
+		margin: 0 0 1rem;
+		font-size: 0.72rem;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+		color: #f3f2ee;
+		opacity: 0.7;
+	}
+
+	.arena-footer__links {
 		display: flex;
-		justify-content: center;
-		gap: 0.5em;
-		margin-top: 0.4em;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.65rem;
+	}
+
+	.arena-footer__link {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		color: #f3f2ee;
 		text-decoration: none;
-		color: #528a93;
+		font-size: 0.95rem;
 	}
-	.email-link svg {
-		position: relative;
-		top: 8px; /* increase this number to move it further down */
-	}
-	.email-link:hover, .insta-link:hover {
+
+	.arena-footer__link:hover {
 		text-decoration: underline;
+		text-underline-offset: 3px;
+	}
+
+	.arena-footer__submit {
+		margin-top: 0.5rem;
+		padding-top: 1.1rem;
+		border-top: 1px solid rgba(243, 242, 238, 0.2);
+		width: 100%;
+		max-width: 20rem;
+	}
+
+	.arena-footer__copyright {
+		margin: 1.75rem 0 0;
+		font-size: 0.78rem;
+		letter-spacing: 0.04em;
+		color: #f3f2ee;
+		opacity: 0.55;
 	}
 </style>
