@@ -9,6 +9,7 @@ import Logo from "../assets/logo.png";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 import "../styles/home.css";
 import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
 
 const allBlogPosts = await getCollection("blog");
 
@@ -192,7 +193,14 @@ const reviews = allBlogPosts.filter((post) => post.data.category === "reviews");
 								essays.map((article) => (
 									<div class="category-card">
 										<span class="category-card__mark">
-											{article.data.heroImage}
+											{article.data.heroImage && (
+												<Image
+													src={article.data.heroImage}
+													alt={article.data.title}
+													width={80}
+													height={80}
+												/>
+											)}
 										</span>
 										<p class="category-card__title">
 											{article.data.title}
@@ -216,7 +224,14 @@ const reviews = allBlogPosts.filter((post) => post.data.category === "reviews");
 								literaryFeature.map((article) => (
 									<div class="category-card">
 										<span class="category-card__mark">
-											{article.data.heroImage}
+											{article.data.heroImage && (
+												<Image
+													src={article.data.heroImage}
+													alt={article.data.title}
+													width={80}
+													height={80}
+												/>
+											)}
 										</span>
 										<p class="category-card__title">
 											{article.data.title}
@@ -240,7 +255,14 @@ const reviews = allBlogPosts.filter((post) => post.data.category === "reviews");
 								reviews.map((article) => (
 									<div class="category-card">
 										<span class="category-card__mark">
-											{article.data.heroImage}
+											{article.data.heroImage && (
+												<Image
+													src={article.data.heroImage}
+													alt={article.data.title}
+													width={80}
+													height={80}
+												/>
+											)}
 										</span>
 										<p class="category-card__title">
 											{article.data.title}
