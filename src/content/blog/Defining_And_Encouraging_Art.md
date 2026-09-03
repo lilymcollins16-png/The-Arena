@@ -2,7 +2,7 @@
 title: 'Defining and Encouraging Artistry'
 description: 'An Article About Art'
 author: 'Charles Wilcoxon'
-pubDate: 'Apr 22 2026'
+pubDate: 'Apr 23 2026'
 heroImage: '../../assets/Post_3_pic.jpg'
 ---
 

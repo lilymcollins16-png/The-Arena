@@ -47,8 +47,8 @@
 }
 
 .masthead__logo {
-  width: 64px;
-  height: 64px;
+  width: 400px;
+  height: 400px;
   margin: 0 auto 1.25rem;
   object-fit: contain;
 }

@@ -7,6 +7,7 @@ import AM250Image from "../assets/AM250.jpg";
 import Logo from "../assets/logo.png";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 import "../styles/home.css";
+import { getCollection } from "astro:content";
 
 const categories = [
 	{
@@ -25,6 +26,11 @@ const categories = [
 		note: "Considered takes on books, exhibitions, and ideas in the news.",
 	},
 ];
+
+const poetry = await getCollection('blog', ({ data }) => data.category === 'poetry');
+const essays = await getCollection('blog', ({ data }) => data.category === 'essays');
+const reviews = await getCollection('blog', ({ data }) => data.category === 'reviews');
+
 ---
 
 <!doctype html>
@@ -157,6 +163,34 @@ const categories = [
 							{category.note}
 						</p>
 						<div class="category-grid">
+							{(category.name.toLowerCase() == "poetry" && poetry.length > 0) ? poetry.map((article) => (
+								<div class="category-card">
+									<span class="category-card__mark">+</span>
+									<p class="category-card__title">{article.data.title}</p>
+									<p class="category-card__note">
+										Published pieces will appear here as cards with a
+										title, author, and short excerpt.
+									</p>
+								</div>
+							)) : (category.name.toLowerCase() == "essays" && essays.length > 0) ? essays.map((article) => (
+								<div class="category-card">
+									<span class="category-card__mark">+</span>
+									<p class="category-card__title">{article.data.title}</p>
+									<p class="category-card__note">
+										Published pieces will appear here as cards with a
+										title, author, and short excerpt.
+									</p>
+								</div>
+							)) : (category.name.toLowerCase() == "reviews" && reviews.length > 0) ? reviews.map((article) => (
+								<div class="category-card">
+									<span class="category-card__mark">+</span>
+									<p class="category-card__title">{article.data.title}</p>
+									<p class="category-card__note">
+										Published pieces will appear here as cards with a
+										title, author, and short excerpt.
+									</p>
+								</div>
+							)) : 
 							<div class="category-card">
 								<span class="category-card__mark">+</span>
 								<p class="category-card__title">Add a {category.singular}</p>
@@ -165,6 +199,7 @@ const categories = [
 									title, author, and short excerpt.
 								</p>
 							</div>
+							}
 							<div class="category-card">
 								<span class="category-card__mark">+</span>
 								<p class="category-card__title">Add a {category.singular}</p>
