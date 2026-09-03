@@ -5,6 +5,7 @@ author: 'Charles Wilcoxon'
 pubDate: 'Apr 23 2026'
 heroImage: '../../assets/Post_3_pic.jpg'
 tagline: "The Journal's Arena, Part One"
+category: 'essays'
 ---
 
 

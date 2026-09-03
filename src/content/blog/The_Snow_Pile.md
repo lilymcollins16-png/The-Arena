@@ -4,7 +4,7 @@ description: 'A Literary Feature'
 author: 'William Thissell'
 pubDate: 'Apr 26 2026'
 heroImage: '../../assets/Generic_post_pic.jpg'
-category: 'poetry'
+category: 'literary-feature'
 ---
 
 

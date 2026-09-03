@@ -9,28 +9,13 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 import "../styles/home.css";
 import { getCollection } from "astro:content";
 
-const categories = [
-	{
-		name: "Essays",
-		singular: "Essay",
-		note: "Argument and analysis on ideas, culture, and civic life.",
-	},
-	{
-		name: "Poetry",
-		singular: "Poem",
-		note: "Verse selected from student and community submissions.",
-	},
-	{
-		name: "Reviews",
-		singular: "Review",
-		note: "Considered takes on books, exhibitions, and ideas in the news.",
-	},
-];
+const allBlogPosts = await getCollection("blog");
 
-const poetry = await getCollection('blog', ({ data }) => data.category === 'poetry');
-const essays = await getCollection('blog', ({ data }) => data.category === 'essays');
-const reviews = await getCollection('blog', ({ data }) => data.category === 'reviews');
-
+const essays = allBlogPosts.filter((post) => post.data.category === "essays");
+const literaryFeature = allBlogPosts.filter(
+	(post) => post.data.category === "literary-feature",
+);
+const reviews = allBlogPosts.filter((post) => post.data.category === "reviews");
 ---
 
 <!doctype html>
@@ -51,9 +36,7 @@ const reviews = await getCollection('blog', ({ data }) => data.category === 'rev
 					height="64"
 				/>
 				<h1 class="masthead__title">The Arena Journal</h1>
-				<p class="masthead__tagline">
-					Essays on ideas, culture, and the public square.
-				</p>
+				<p class="masthead__tagline">In medias res</p>
 				<p class="masthead__meta">
 					<span>Vol. I</span>
 					<span>Published quarterly</span>
@@ -73,10 +56,9 @@ const reviews = await getCollection('blog', ({ data }) => data.category === 'rev
 			<!-- Mission statement -->
 			<div class="statement">
 				<p>
-					The Arena Journal publishes long-form essays and argument at a
-					level too often missing from student discourse — writing that
-					takes ideas seriously, engages opposing views honestly, and
-					makes its case in the open.
+					The Arena Journal is an intellectual publication founded to
+					bring the intellectual rigor and vibrancy of conservative
+					life at the University of Virginia to the published page.
 				</p>
 			</div>
 
@@ -87,23 +69,44 @@ const reviews = await getCollection('blog', ({ data }) => data.category === 'rev
 				</div>
 				<div class="featured-essay">
 					<span class="featured-essay__label">Essays</span>
-					<h3 class="featured-essay__title">[Essay Title]</h3>
-					<p class="featured-essay__byline">By [Author Name]</p>
+					<h3 class="featured-essay__title">
+						How to Justify the Revolution
+					</h3>
+					<p class="featured-essay__byline">By Charlie Miller</p>
 					<div class="featured-essay__excerpt">
 						<p>
-							This is placeholder copy standing in for the opening of a
-							featured essay. It should read like the real thing — a
-							strong first paragraph that sets up the argument and gives
-							a reader a reason to keep going, followed by enough of a
-							second paragraph to establish momentum before the text
-							fades out below.
-						</p>
-						<p>
-							Swap this paragraph, the title, and the byline above for
-							the actual excerpt when the essay is ready to feature.
+							Most Americans are familiar with the traditional
+							story of the American Revolution: as the British
+							government grew increasingly tyrannical, they
+							inflicted abuses upon the colonists that compelled
+							the people to throw off the yoke of tyranny,
+							eventually creating the freest and most prosperous
+							country in the world. Although this simplified story
+							of the Revolution conveys certain truths, it is
+							woefully incomplete. To start, only about forty-five
+							percent of the colonists actually identified as
+							Patriots—that is, in opposition to the Crown of
+							England—with the rest roughly split between
+							Loyalists and noncommittal. Considering these
+							demographics, it is often easy to forget the radical nature
+							of rebellion against one’s mother country for the individual
+							Patriots, especially those intellectuals among them who
+							sought to morally justify the Revolution through Christian
+							tradition and contemporary political thought. Beginning
+							with an analysis of Scripture and Catholic just war theory,
+							I will argue that the justification for the American Revolution’s
+							moral legitimacy was not traditionally Christian. I will
+							then trace how Protestant theology, by shaping Enlightened
+							political thought, fundamentally transformed the traditional
+							Christian understanding of authority in the Church and
+							state, furnishing the Colonists with an intellectual justification
+							for revolution.
 						</p>
 					</div>
-					<a href="#" class="btn">Continue Reading</a>
+					<a
+						href="http://thearenajournal.com/blog/how_to_justify_the_revolution/"
+						class="btn">Continue Reading</a
+					>
 				</div>
 			</section>
 
@@ -113,27 +116,42 @@ const reviews = await getCollection('blog', ({ data }) => data.category === 'rev
 					<h2 id="issues-heading">Read the Journal</h2>
 				</div>
 				<div class="issues">
-					<a class="issue" href="/pdfs/ArenaAM250.pdf" target="_blank">
+					<a
+						class="issue"
+						href="/pdfs/ArenaAM250.pdf"
+						target="_blank"
+					>
 						<span class="issue__label">Current Issue</span>
 						<div class="issue__cover">
-							<img src={AM250Image.src} alt="Cover of the America 250 issue of The Arena Journal" width="500" height="750" />
+							<img
+								src={AM250Image.src}
+								alt="Cover of the America 250 issue of The Arena Journal"
+								width="500"
+								height="750"
+							/>
 						</div>
 						<h3 class="issue__title">The America 250 Issue</h3>
 						<p class="issue__dek">
-							Essays on the American founding, its inheritances, and what
-							is owed to a republic turning two hundred fifty.
+							Essays on the American founding, its inheritances,
+							and what is owed to a republic turning two hundred
+							fifty.
 						</p>
 						<span class="issue__cta">Read the current issue</span>
 					</a>
 					<a class="issue" href="/pdfs/Issue_1.pdf" target="_blank">
 						<span class="issue__label">From the Archive</span>
 						<div class="issue__cover">
-							<img src={AboutHeroImage.src} alt="Cover of Issue No. 1 of The Arena Journal" width="500" height="750" />
+							<img
+								src={AboutHeroImage.src}
+								alt="Cover of Issue No. 1 of The Arena Journal"
+								width="500"
+								height="750"
+							/>
 						</div>
 						<h3 class="issue__title">Issue No. 1</h3>
 						<p class="issue__dek">
-							Our inaugural issue, and the case for bringing rigorous
-							argument back into the room.
+							Our inaugural issue, and the case for bringing
+							rigorous argument back into the room.
 						</p>
 						<span class="issue__cta">Read issue no. 1</span>
 					</a>
@@ -144,75 +162,133 @@ const reviews = await getCollection('blog', ({ data }) => data.category === 'rev
 			<div class="quote-band">
 				<div class="quote-band__inner">
 					<blockquote>
-						An arena is not a place of comfort. It is where ideas are
-						tested, not merely asserted — and where the testing makes
-						them worth holding.
+						It is not the critic who counts; not the man who points
+						out how the strong man stumbles or where the doer of
+						deeds could have done them better. The credit belongs to
+						the man who is actually in the arena, whose face is
+						marred by dust and sweat and blood.
 					</blockquote>
-					<cite>The Editors</cite>
+					<cite
+						>Theodore Roosevelt, “Citizenship in a Republic,” 1910</cite
+					>
 				</div>
 			</div>
 
 			<!-- Categories -->
 			<div class="categories">
-				{categories.map((category) => (
-					<section class="category-section" aria-labelledby={`${category.name.toLowerCase()}-heading`}>
-						<div class="section__heading">
-							<h2 id={`${category.name.toLowerCase()}-heading`}>{category.name}</h2>
-						</div>
-						<p class="category-section__note">
-							{category.note}
-						</p>
-						<div class="category-grid">
-							{(category.name.toLowerCase() == "poetry" && poetry.length > 0) ? poetry.map((article) => (
-								<div class="category-card">
-									<span class="category-card__mark">+</span>
-									<p class="category-card__title">{article.data.title}</p>
-									<p class="category-card__note">
-										Published pieces will appear here as cards with a
-										title, author, and short excerpt.
-									</p>
-								</div>
-							)) : (category.name.toLowerCase() == "essays" && essays.length > 0) ? essays.map((article) => (
-								<div class="category-card">
-									<span class="category-card__mark">+</span>
-									<p class="category-card__title">{article.data.title}</p>
-									<p class="category-card__note">
-										Published pieces will appear here as cards with a
-										title, author, and short excerpt.
-									</p>
-								</div>
-							)) : (category.name.toLowerCase() == "reviews" && reviews.length > 0) ? reviews.map((article) => (
-								<div class="category-card">
-									<span class="category-card__mark">+</span>
-									<p class="category-card__title">{article.data.title}</p>
-									<p class="category-card__note">
-										Published pieces will appear here as cards with a
-										title, author, and short excerpt.
-									</p>
-								</div>
-							)) : 
-							<div class="category-card">
-								<span class="category-card__mark">+</span>
-								<p class="category-card__title">Add a {category.singular}</p>
-								<p class="category-card__note">
-									Published pieces will appear here as cards with a
-									title, author, and short excerpt.
-								</p>
-							</div>
-							}
-							<div class="category-card">
-								<span class="category-card__mark">+</span>
-								<p class="category-card__title">Add a {category.singular}</p>
-								<p class="category-card__note">
-									Published pieces will appear here as cards with a
-									title, author, and short excerpt.
-								</p>
-							</div>
-						</div>
-					</section>
-				))}
+				<section
+					class="category-section"
+					aria-labelledby={"essays-heading"}
+				>
+					<div class="section__heading">
+						<h2 id={"essays-heading"}>Essays</h2>
+					</div>
+					<p class="category-section__note">yo!</p>
+					<div class="category-grid">
+						{
+							essays.length > 0 &&
+								essays.map((article) => (
+									<div class="category-card">
+										<span class="category-card__mark">
+											{" "}
+											+{" "}
+										</span>
+										<p class="category-card__title">
+											{article.data.title}
+										</p>
+										<p class="category-card__note">
+											Published pieces will appear here as
+											cards with a title, author, and
+											short excerpt.
+										</p>
+									</div>
+								))
+						}
+					</div>
+				</section>
+				<section
+					class="category-section"
+					aria-labelledby={"literary-heading"}
+				>
+					<div class="section__heading">
+						<h2 id={"literary-heading"}>Literary Features</h2>
+					</div>
+					<p class="category-section__note">yo!</p>
+					<div class="category-grid">
+						{
+							literaryFeature.length > 0 &&
+								literaryFeature.map((article) => (
+									<div class="category-card">
+										<span class="category-card__mark">
+											{" "}
+											+{" "}
+										</span>
+										<p class="category-card__title">
+											{article.data.title}
+										</p>
+										<p class="category-card__note">
+											Published pieces will appear here as
+											cards with a title, author, and
+											short excerpt.
+										</p>
+									</div>
+								))
+						}
+					</div>
+				</section>
+				<section
+					class="category-section"
+					aria-labelledby={"review-heading"}
+				>
+					<div class="section__heading">
+						<h2 id={"review-heading"}>Reviews</h2>
+					</div>
+					<p class="category-section__note">Yo!</p>
+					<div class="category-grid">
+						{
+							reviews.length > 0 &&
+								reviews.map((article) => (
+									<div class="category-card">
+										<span class="category-card__mark">
+											{" "}
+											+{" "}
+										</span>
+										<p class="category-card__title">
+											{article.data.title}
+										</p>
+										<p class="category-card__note">
+											Published pieces will appear here as
+											cards with a title, author, and
+											short excerpt.
+										</p>
+									</div>
+								))
+						}
+					</div>
+				</section>
 			</div>
 		</main>
+
 		<Footer />
 	</body>
 </html>
+
+<!-- {
+						posts.map((post) => (
+							<li>
+								<a href={`/blog/${post.id}/`}>
+									{post.data.heroImage && (
+										<Image width={720} height={360} src={post.data.heroImage} alt="" />
+									)}
+									<div class="title" style="text-align: center;">
+									<h4 >{post.data.title}</h4>
+									<h5 >{post.data.tagline && post.data.tagline}</h5>
+									</div>
+									<span class="author">{post.data.author} - </span>
+									<span class="date">
+										<FormattedDate date={post.data.pubDate} />
+									</span>
+								</a>
+							</li>
+						))
+					} -->

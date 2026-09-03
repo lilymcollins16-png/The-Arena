@@ -41,16 +41,17 @@
    -------------------------------------------------------------------- */
 
 .masthead {
-  padding: 3.5rem 1.5rem 2.75rem;
+  padding: 0 1.5rem 2.75rem;
   text-align: center;
   border-bottom: 3px double var(--color-oxblood);
 }
 
 .masthead__logo {
-  width: 400px;
-  height: 400px;
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
   margin: 0 auto 1.25rem;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .masthead__title {
@@ -59,7 +60,7 @@
   line-height: 1.05;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--color-ink);
 }
 
@@ -124,7 +125,7 @@
    -------------------------------------------------------------------- */
 
 .section {
-  max-width: 68rem;
+  max-width: 128rem;
   margin: 0 auto;
   padding: 4rem 1.5rem;
 }
@@ -140,7 +141,7 @@
   content: "";
   flex: 1 1 auto;
   height: 1px;
-  background: var(--color-line);
+  background: var(--color-oxblood);
 }
 
 .section__heading h2 {
