@@ -388,7 +388,7 @@
 
 .category-card {
   border: 1px dashed var(--color-line);
-  padding: 2rem 1.5rem;
+  padding: 1.2rem 1.5rem;
   text-align: center;
   color: var(--color-ink-soft);
 }
@@ -398,7 +398,7 @@
   align-items: center;
   justify-content: center;
   width: auto;
-  height: 2rem;
+  height: 3rem;
   border: 1px solid var(--color-line);
   border-radius: 95%;
   margin-bottom: 0.9rem;
