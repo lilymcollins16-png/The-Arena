@@ -105,8 +105,10 @@ const posts = (await getCollection('blog')).sort(
 									{post.data.heroImage && (
 										<Image width={720} height={360} src={post.data.heroImage} alt="" />
 									)}
-									<h4 class="title">{post.data.title}</h4>
-									<h5 style="text-align: center;" class="title">{post.data.tagline && post.data.tagline}</h5>
+									<div class="title" style="text-align: center;">
+									<h4 >{post.data.title}</h4>
+									<h5 >{post.data.tagline && post.data.tagline}</h5>
+									</div>
 									<span class="author">{post.data.author} - </span>
 									<span class="date">
 										<FormattedDate date={post.data.pubDate} />
