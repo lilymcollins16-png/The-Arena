@@ -4,20 +4,23 @@ import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import AboutHeroImage from "../assets/issue1.jpg";
 import AM250Image from "../assets/AM250.jpg";
-import Arena_Photo from "../assets/colosseum.jpeg"
+import Arena_Photo from "../assets/colosseum.jpeg";
 import Logo from "../assets/logo.png";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 import "../styles/home.css";
 import { getCollection } from "astro:content";
 import { Image } from "astro:assets";
+import FormattedDate from "../components/FormattedDate.astro";
 
-const allBlogPosts = await getCollection("blog");
+const posts = (await getCollection("blog")).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
 
-const essays = allBlogPosts.filter((post) => post.data.category === "essays");
-const literaryFeature = allBlogPosts.filter(
+const essays = posts.filter((post) => post.data.category === "essays");
+const literaryFeature = posts.filter(
 	(post) => post.data.category === "literary-feature",
 );
-const reviews = allBlogPosts.filter((post) => post.data.category === "reviews");
+const reviews = posts.filter((post) => post.data.category === "reviews");
 ---
 
 <!doctype html>
@@ -73,7 +76,8 @@ const reviews = allBlogPosts.filter((post) => post.data.category === "reviews");
 				<div class="featured-essay">
 					<span class="featured-essay__label">Essays</span>
 					<h3 class="featured-essay__title">
-						Enlightened Protestantism: How Christians Justified the American Revolution
+						Enlightened Protestantism: How Christians Justified the
+						American Revolution
 					</h3>
 					<p class="featured-essay__byline">By Charlie Miller</p>
 					<div class="featured-essay__excerpt">
@@ -91,19 +95,21 @@ const reviews = allBlogPosts.filter((post) => post.data.category === "reviews");
 							Patriots—that is, in opposition to the Crown of
 							England—with the rest roughly split between
 							Loyalists and noncommittal. Considering these
-							demographics, it is often easy to forget the radical nature
-							of rebellion against one’s mother country for the individual
-							Patriots, especially those intellectuals among them who
-							sought to morally justify the Revolution through Christian
-							tradition and contemporary political thought. Beginning
-							with an analysis of Scripture and Catholic just war theory,
-							I will argue that the justification for the American Revolution’s
-							moral legitimacy was not traditionally Christian. I will
-							then trace how Protestant theology, by shaping Enlightened
-							political thought, fundamentally transformed the traditional
-							Christian understanding of authority in the Church and
-							state, furnishing the Colonists with an intellectual justification
-							for revolution.
+							demographics, it is often easy to forget the radical
+							nature of rebellion against one’s mother country for
+							the individual Patriots, especially those
+							intellectuals among them who sought to morally
+							justify the Revolution through Christian tradition
+							and contemporary political thought. Beginning with
+							an analysis of Scripture and Catholic just war
+							theory, I will argue that the justification for the
+							American Revolution’s moral legitimacy was not
+							traditionally Christian. I will then trace how
+							Protestant theology, by shaping Enlightened
+							political thought, fundamentally transformed the
+							traditional Christian understanding of authority in
+							the Church and state, furnishing the Colonists with
+							an intellectual justification for revolution.
 						</p>
 					</div>
 					<a
@@ -186,26 +192,31 @@ const reviews = allBlogPosts.filter((post) => post.data.category === "reviews");
 					<div class="section__heading">
 						<h2 id={"essays-heading"}>Essays</h2>
 					</div>
-					<p class="category-section__note">Compositions engaging with philosophy, politics, literature, and the conservative tradition.</p>
+					<p class="category-section__note">
+						Compositions engaging with philosophy, politics,
+						literature, and the conservative tradition.
+					</p>
 					<div class="category-grid">
 						{
 							essays.length > 0 &&
 								essays.map((article) => (
-									<div class="category-card">
-										<span class="category-card__mark">
-											{article.data.heroImage && (
-												<Image
-													src={article.data.heroImage}
-													alt={article.data.title}
-													width={200}
-													height={120}
-												/>
-											)}
-										</span>
-										<p class="category-card__title">
-											{article.data.title}
-										</p>
-									</div>
+									<a href={`/blog/${article.id}/`}>
+										{article.data.heroImage && (
+											<Image
+												width={720}
+												height={360}
+												src={article.data.heroImage}
+												alt={article.data.title}
+											/>
+										)}
+										<div style="text-align: center;">
+											<h6>{article.data.title}</h6>
+											<h7>
+												{article.data.tagline &&
+													article.data.tagline}
+											</h7>
+										</div>
+									</a>
 								))
 						}
 					</div>
@@ -217,26 +228,30 @@ const reviews = allBlogPosts.filter((post) => post.data.category === "reviews");
 					<div class="section__heading">
 						<h2 id={"literary-heading"}>Literary Features</h2>
 					</div>
-					<p class="category-section__note">Poetry and prose selected from student submissions.</p>
+					<p class="category-section__note">
+						Poetry and prose selected from student submissions.
+					</p>
 					<div class="category-grid">
 						{
 							literaryFeature.length > 0 &&
 								literaryFeature.map((article) => (
-									<div class="category-card">
-										<span class="category-card__mark">
-											{article.data.heroImage && (
-												<Image
-													src={article.data.heroImage}
-													alt={article.data.title}
-													width={200}
-													height={120}
-												/>
-											)}
-										</span>
-										<p class="category-card__title">
-											{article.data.title}
-										</p>
-									</div>
+									<a href={`/blog/${article.id}/`}>
+										{article.data.heroImage && (
+											<Image
+												width={720}
+												height={360}
+												src={article.data.heroImage}
+												alt={article.data.title}
+											/>
+										)}
+										<div style="text-align: center;">
+											<h6>{article.data.title}</h6>
+											<h7>
+												{article.data.tagline &&
+													article.data.tagline}
+											</h7>
+										</div>
+									</a>
 								))
 						}
 					</div>
@@ -248,26 +263,30 @@ const reviews = allBlogPosts.filter((post) => post.data.category === "reviews");
 					<div class="section__heading">
 						<h2 id={"review-heading"}>Reviews</h2>
 					</div>
-					<p class="category-section__note">Considered takes on books, movies, and poetry.</p>
+					<p class="category-section__note">
+						Considered takes on books, movies, and poetry.
+					</p>
 					<div class="category-grid">
 						{
 							reviews.length > 0 &&
 								reviews.map((article) => (
-									<div class="category-card">
-										<span class="category-card__mark">
-											{article.data.heroImage && (
-												<Image
-													src={article.data.heroImage}
-													alt={article.data.title}
-													width={200}
-													height={120}
-												/>
-											)}
-										</span>
-										<p class="category-card__title">
-											{article.data.title}
-										</p>
-									</div>
+									<a href={`/blog/${article.id}/`}>
+										{article.data.heroImage && (
+											<Image
+												width={720}
+												height={360}
+												src={article.data.heroImage}
+												alt={article.data.title}
+											/>
+										)}
+										<div style="text-align: center;">
+											<h6>{article.data.title}</h6>
+											<h7>
+												{article.data.tagline &&
+													article.data.tagline}
+											</h7>
+										</div>
+									</a>
 								))
 						}
 					</div>
