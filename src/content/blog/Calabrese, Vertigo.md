@@ -1,5 +1,5 @@
 ---
-title: 'Hitchcock’s *Vertigo*: A Study on Human Connection'
+title: 'Hitchcock’s 'Vertigo': A Study on Human Connection'
 description: 'Reclaiming Film'
 author: 'Joseph Calabrese'
 pubDate: 'Sept 28 2026'
