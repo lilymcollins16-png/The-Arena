@@ -1,6 +1,10 @@
-**Hitchcock’s *Vertigo*: A Study on Human Connection**
-
-*J o s e p h C a l a b r e s e*
+---
+title: 'Hitchcock’s *Vertigo*: A Study on Human Connection'
+description: 'Reclaiming Film'
+author: 'Joseph Calabrese'
+pubDate: 'Sept 28 2026'
+heroImage: '../../assets/Post_1_pic.jpg'
+---
 
 Alfred Hitchcock’s *Vertigo* (1958) has marveled audiences for decades. Released initially to a mixed reception from critics and crowds alike, the film has steadily grown in popularity and now commonly numbers highly among the greatest American films (rated as the 3rd greatest American film by the BBC in 2015).[^1] This ranking is indeed well deserved, as the movie boasts beautiful visuals, an excellent score, an incredible lead performance by James Stewart, and a thrilling plot. Above all, *Vertigo* is able to remain increasingly relevant to our own time; Stewart’s character’s disillusion with reality and obsessive state relate ominously well to the social disconnect and idealism of today.
 
