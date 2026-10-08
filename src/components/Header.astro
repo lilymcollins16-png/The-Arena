@@ -64,4 +64,34 @@ import HeaderLink from './HeaderLink.astro';
 		box-shadow: 0 4px 12px rgba(var(--black), 20%);
 		opacity: 0.9;
 	}
+
+	@media (max-width: 600px) {
+		header {
+			padding: 0 0.75em;
+		}
+		nav {
+			grid-template-columns: minmax(0, 1fr) auto;
+			row-gap: 0.25em;
+			padding: 0.25em 0;
+		}
+		nav h2 {
+			min-width: 0;
+			font-size: 0.95em;
+		}
+		.internal-links {
+			grid-column: 1 / -1;
+			grid-row: 2;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		nav a {
+			padding: 0.65em 0.45em;
+		}
+		nav a.donate-btn {
+			grid-column: 2;
+			grid-row: 1;
+			padding: 0.55em 1em;
+		}
+	}
 </style>
