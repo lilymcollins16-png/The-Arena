@@ -1,0 +1,104 @@
+---
+import ContributeHeroImage from "../assets/Books.jpg";
+import Layout from "../layouts/Contribute.astro";
+---
+
+
+<Layout
+    title="Contribute"
+>
+    <p style="text-indent: 40px;">
+        The Arena Journal is a publication rooted in the conservative tradition founded in 2026. With an audience of over 500 readers and growing, it is a place for conservatives who are looking for serious intellectual engagement in a general culture of intellectual fear and apathy. The Arena invites you to think and write seriously about topics that interest you, whether they be in politics, philosophy, history, literature, or another discipline. By contributing to The Arena, you help to cultivate the community of serious conservative intellectuals at UVA and show the broader UVA community what thoughtful conservatives can produce.
+
+
+    </p>
+    <div class="arena-section-heading">
+        <h5>Contribution Details</h5>
+    </div>
+    <p style="text-indent: 40px;">
+        The Journal's Arena facilitates written debates consisting of two exchanges from each side on an issue contentious between two contributors. The Journal's Arena may be entered by two writers at once with two opening statements or by a single writer who composes an opening statement, which will then be advertised to potential adversaries. Opening statements range from approximately 1000 to 2000 words. First opening statements for Issue III are due by October 2.
+    </p>
+
+
+    <p style="text-indent: 40px;">
+        Argumentative essays demonstrate originality of thought and excellence of writing in approximately 1500 to 2000 words on a topic of the contributor's interest. Argumentative essays for Issue III are due by October 16.
+    </p>
+    <p style="text-indent: 40px;">
+        Reviews and meditations on books, films, or other intellectually enriching primary or secondary sources should convey the cultural, philosophical, artistic, or theological relevance of the work. The Arena accepts a wide range of lengths for reviews and meditations. Reviews and meditations for Issue III are due by October 16.
+    </p>
+    <p style="text-indent: 40px;">
+        Commentaries are shorter pieces, ranging approximately from 500 to 1000 words, on timely topics. They may pertain to UVA-specific or broader cultural happenings and should convey the cultural, philosophical, artistic, or theological relevance of the event. Commentaries for Issue III are due by October 16.
+    </p>
+    <p style="text-indent: 40px;">
+        Interviews or intellectual profiles present the ideas of professors, scholars, UVA alumni, clergy, or other members of the conservative community at UVA. These pieces should convey the cultural, philosophical, artistic, or theological relevance of the interviewee's ideas, with which the piece may engage critically but charitably. Interviews for Issue III are due by October 16.
+    </p>
+    <div class="arena-section-heading">
+        <h3>
+           
+        </h3>
+    </div>
+    ㅤ
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd035WWr2dE3HkFkNX1Wle8rznQGO44mk1UlKIm1xWdQXIKdA/viewform?usp=dialog" class="submission-button" target="_blank">Submit Your Writing</a>
+    </p>
+    <style>
+        .arena-pullquote {
+            margin: 2rem auto;
+            max-width: 42rem;
+            padding: 1.5rem 0 1.5rem 1.5rem;
+            border-left: 3px solid var(--color-oxblood, #6e1423);
+            font-style: italic;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: var(--color-ink-soft, inherit);
+        }
+        .arena-pullquote cite {
+            display: block;
+            margin-top: 1rem;
+            font-style: normal;
+            font-size: 0.8rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--color-oxblood, inherit);
+            opacity: 0.85;
+        }
+        .arena-section-heading {
+            display: flex;
+            align-items: baseline;
+            gap: 0.85rem;
+            margin: 2.5rem 0 1.75rem;
+        }
+        .arena-section-heading::after {
+            content: "";
+            flex: 1 1 auto;
+            height: 1px;
+            background: var(--color-oxblood, #6e1423);
+        }
+        .arena-section-heading h3 {
+            margin: 0;
+            font-size: 0.85rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-oxblood, inherit);
+            white-space: nowrap;
+        }
+        .card {
+            display: grid;
+            grid-template-columns: 1fr; /* single column on mobile */
+            gap: 0.6rem;
+            align-items: center;
+        }
+        .card-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            justify-self: center;
+            border: 1px solid var(--color-line, #d6d2c8);
+        }
+        @media (min-width: 640px) {
+            .card {
+                grid-template-columns: 250px 1fr; /* fixed image width + fluid text */
+            }
+        }
+    </style>
+</Layout>

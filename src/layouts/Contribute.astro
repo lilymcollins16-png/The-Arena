@@ -1,0 +1,94 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import Header from '../components/Header.astro';
+import "../styles/home.css";
+
+
+type Props = CollectionEntry<'blog'>['data'];
+
+
+const { title, description, author, heroImage, tagline } = Astro.props;
+---
+
+
+<html lang="en">
+    <head>
+        <BaseHead title={title} description={description} author={author}/>
+        <style>
+            main {
+                width: calc(100% - 2em);
+                max-width: 100%;
+                margin: 0;
+            }
+            .hero-image {
+                width: 100%;
+            }
+            .hero-image img {
+                display: block;
+                margin: 0 auto;
+                border-radius: 12px;
+                box-shadow: var(--box-shadow);
+            }
+            .prose {
+                width: 720px;
+                max-width: calc(100% - 2em);
+                margin: auto;
+                padding: 1em;
+                color: var(--color-ink-soft, rgb(var(--gray-dark)));
+            }
+            .title {
+                margin-bottom: 1em;
+                padding: 1em 0;
+                text-align: center;
+                line-height: 0;
+            }
+            .title h1 {
+                margin: 0 0 0.5em 0;
+                color: var(--color-ink, rgb(var(--black)));
+            }
+            .date {
+                margin-bottom: 0.5em;
+                font-size: 0.72rem;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                color: var(--color-oxblood, rgb(var(--gray)));
+            }
+            .last-updated-on {
+                font-style: italic;
+            }
+            .title hr {
+                border: none;
+                border-top: 3px double var(--color-oxblood, #6e1423);
+                margin-top: 1em;
+            }
+        </style>
+    </head>
+
+
+    <body class="arena-home">
+        <Header />
+        <main>
+            <article>
+                <div class="hero-image">
+                    {heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
+                </div>
+                <div class="prose">
+                    <div class="title">
+                        <h1>{title}</h1>
+                        <h4>{tagline && tagline}</h4>
+                        <br />
+                        <h5>{author}</h5>
+                        <br />
+                        <hr />
+                    </div>
+                    <slot />
+                </div>
+            </article>
+        </main>
+        <Footer />
+    </body>
+</html>
