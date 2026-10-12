@@ -4,6 +4,7 @@ import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import AboutHeroImage from "../assets/issue1.jpg";
 import AM250Image from "../assets/AM250.jpg";
+import Issue2Image from "../assets/Issue II.png";
 import Arena_Photo from "../assets/colosseum.jpeg";
 import Logo from "../assets/logo.png";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
@@ -127,42 +128,43 @@ const reviews = posts.filter((post) => post.data.category === "reviews");
 				<div class="issues">
 					<a
 						class="issue"
-						href="/pdfs/ArenaAM250.pdf"
+						href="/pdfs/Issue_2.pdf"
 						target="_blank"
 					>
 						<span class="issue__label">Current Issue</span>
 						<div class="issue__cover">
 							<img
-								src={AM250Image.src}
-								alt="Cover of the America 250 issue of The Arena Journal"
+								src={Issue2Image.src}
+								alt="Cover of the The Arena Journal Issue No. 2"
 								width="500"
 								height="750"
 							/>
 						</div>
-						<h3 class="issue__title">The America 250 Issue</h3>
+						<h3 class="issue__title">The Arena Issue No. 2: Reclaiming Film</h3>
+						<p class="issue__dek">
+							Reclaiming Film: 
+							explore cinematic themes from 
+							both the modern age and times of old
+						</p>
+						<span class="issue__cta">Read the current issue</span>
+					</a>
+					<a class="issue" href="/pdfs/ArenaAM250.pdf" target="_blank">
+						<span class="issue__label">From the Archive</span>
+						<div class="issue__cover">
+							<img
+								src={AM250Image.src}
+								alt="Cover of The Arena Special Issue: America 250"
+								width="500"
+								height="750"
+							/>
+						</div>
+						<h3 class="issue__title">The Arena Special Issue: America 250</h3>
 						<p class="issue__dek">
 							Essays on the American founding, its inheritances,
 							and what is owed to a republic turning two hundred
 							fifty.
 						</p>
-						<span class="issue__cta">Read the current issue</span>
-					</a>
-					<a class="issue" href="/pdfs/Issue_1.pdf" target="_blank">
-						<span class="issue__label">From the Archive</span>
-						<div class="issue__cover">
-							<img
-								src={AboutHeroImage.src}
-								alt="Cover of Issue No. 1 of The Arena Journal"
-								width="500"
-								height="750"
-							/>
-						</div>
-						<h3 class="issue__title">Issue No. 1</h3>
-						<p class="issue__dek">
-							Our inaugural issue, and the case for bringing
-							rigorous argument back into the room.
-						</p>
-						<span class="issue__cta">Read issue no. 1</span>
+						<span class="issue__cta">Read Special Issue: America 250</span>
 					</a>
 				</div>
 			</section>
