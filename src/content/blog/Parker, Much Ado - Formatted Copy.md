@@ -1,7 +1,7 @@
 ---
 title: "Presenting Shakespearean Absurdity to a Modern Audience"
 description: 'Much Ado About Nothing'
-author: 'Pamela Parker'
+author: 'Pamella Parker'
 pubDate: 'Oct 12 2026'
 heroImage: '../../assets/arena_issue_II_article_pic.jpeg'
 ---

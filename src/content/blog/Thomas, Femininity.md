@@ -1,7 +1,7 @@
 ---
 title: "True Femininity in Cinderella"
 description: 'True Femininity in Cinderella'
-author: 'JKeira Thomas'
+author: 'Keira Thomas'
 pubDate: 'Oct 12 2026'
 heroImage: '../../assets/arena_issue_II_article_pic.jpeg'
 ---
